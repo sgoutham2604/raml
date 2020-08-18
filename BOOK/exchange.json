@@ -1,0 +1,11 @@
+{
+  "main": "book.raml",
+  "name": "BOOK",
+  "classifier": "raml",
+  "tags": [],
+  "groupId": "f5993cfa-c12f-49d1-b71c-e93348c448ed",
+  "assetId": "BOOK",
+  "version": "1.0.0",
+  "apiVersion": "",
+  "dependencies": []
+}

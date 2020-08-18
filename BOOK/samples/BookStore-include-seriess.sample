@@ -1,0 +1,32 @@
+[
+  {
+    "BookID": "183100e3-0e2b-4404-a716-66104d440550",
+    "bookName": "Random Access Memories",
+    "imageURL": "http://upload.wikimedia.org/wikipedia/en/a/a7/Random_Access_Memories.jpg",
+    "Author": "110e8300-e32b-41d4-a716-664400445500",
+    "genre": {
+      "countryCode": "ELE",
+      "countryName": "Electronic"
+    }
+  },
+  {
+    "BookID": "183100e3-0e2b-4404-3123-66111d4de520",
+    "bookName": "OK Computer",
+    "imageURL": "http://www.greenplastic.com/dev/wp-content/uploads/2010/12/ok-computer.jpg",
+    "Author": "11032be3-41d4-4455-a716-664400a71600",
+    "genre": {
+      "countryCode": "ALT",
+      "countryName": "Alternative Rock"
+    }
+  },
+  {
+    "BookID": "183100e3-cccc-4404-1111-63204d64coda",
+    "bookName": "The Dark Side of the Moon",
+    "imageURL": "http://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png",
+    "Author": "110e8300-e32b-41d4-a716-229932554400",
+    "genre": {
+      "countryCode": "PRO",
+      "countryName": "Progressive Rock"
+    }
+  }
+]

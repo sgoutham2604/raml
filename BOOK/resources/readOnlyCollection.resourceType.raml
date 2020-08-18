@@ -1,0 +1,10 @@
+#%RAML 1.0 ResourceType
+    description: Collection of available <<resourcePathName>> in BookStore.
+    get:
+      description: Get a list of <<resourcePathName>>.
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                <<exampleCollection>>

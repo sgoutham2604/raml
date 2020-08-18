@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "required":false,
+  "properties": {
+    "BookID": {
+      "type": "string",
+      "required":true,
+      "minLength": 36,
+      "maxLength": 36
+    },
+    "bookName": {
+      "type": "string",
+      "required": true
+    },
+    "year": {
+      "type": "string",
+      "required": false
+    },
+    "iamgeURL": {
+      "type": "string",
+      "required": false
+    },
+    "genreCode": {
+      "type": "string",
+      "required": true
+    },
+    "Author": {
+      "type": "string",
+      "required":true,
+      "minLength": 36,
+      "maxLength": 36
+    }
+  }
+}

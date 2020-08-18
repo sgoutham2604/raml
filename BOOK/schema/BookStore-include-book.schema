@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "required": true,
+  "properties": {
+    "bookID": {
+      "type": "string",
+      "required": true,
+      "minLength": 36,
+      "maxLength": 36
+    },
+    "bookName": {
+      "type": "string",
+      "required": true
+    },
+    "BookID": {
+      "type": "string",
+      "required": true,
+      "minLength": 36,
+      "maxLength": 36
+    }
+  }
+}

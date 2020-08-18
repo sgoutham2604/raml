@@ -1,0 +1,28 @@
+#%RAML 1.0 ResourceType
+
+
+    description: Collection of available <<resourcePathName>> in BookStore.
+    get:
+      description: Get a list of <<resourcePathName>>.
+      responses:
+        200:
+          body:
+            application/json:
+              example: | 
+                <<exampleCollection>>            
+    post:
+      description: |
+        Add a new <<resourcePathName|!singularize>> to BookStore.
+      
+      body:
+        application/json:
+          type: <<resourcePathName|!singularize>>
+          example: | 
+              <<exampleItem>>
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                { "message": "The <<resourcePathName|!singularize>> has been properly entered" }
+ 
