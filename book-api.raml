@@ -1,0 +1,35 @@
+#%RAML 1.0
+---
+title: BookStore API
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/b43afdf4-f7ab-43d2-affc-ac332d40fc79/ # baseUri: http://BookStore.api.com
+version: v1
+
+types:
+ book: !include schema/BookStore-include-book.schema
+ author: !include schema/BookStore-include-author.schema
+ series: !include schema/BookStore-include-series.schema
+
+traits:
+  searchTrait: !include traits/searchable.raml
+  pageTrait: !include  traits/pageable.raml
+  orderTrait: !include  traits/orderable.raml
+  securityTrait: !include traits/security.raml
+
+resourceTypes:
+  collection: !include  resources/collection.resourceType.raml
+  readOnlyCollection: !include  resources/readOnlyCollection.resourceType.raml
+  collectionItem: !include  resources/collectionItem.resourceType.raml 
+
+
+/books:
+  type:
+    collection:
+      exampleCollection: !include samples/BookStore-include-books.sample
+      exampleItem: !include samples/BookStore-include-book-new.sample
+  get:
+    is: [
+          searchTrait: {description: "with valid searchable fields: bookName", example: "[\"bookName\", \"Get L\", \"like\"]"},
+          orderTrait: {fieldsList: "bookName"},
+          pageTrait:
+        ]
+ 
